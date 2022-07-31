@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 )
 
@@ -10,5 +11,9 @@ func main() {
 }
 
 func Hello(name string) (string, error) {
+	if name == "" {
+		return "", errors.New("")
+	}
 	return name, nil
+
 }
