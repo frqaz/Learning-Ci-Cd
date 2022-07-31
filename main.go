@@ -10,5 +10,5 @@ func main() {
 }
 
 func Hello(name string) (string, error) {
-	return "", nil
+	return name, nil
 }
